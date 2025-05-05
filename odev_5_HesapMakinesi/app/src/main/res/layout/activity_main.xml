@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number1Text"
+        android:layout_width="287dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Enter number 1  "
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/number2Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2Text"
+        android:layout_width="285dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Enter number 2"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1Text" />
+
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="127dp"
+        android:layout_height="74dp"
+        android:onClick="mySum"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonClear"
+        app:layout_constraintStart_toStartOf="@+id/number2Text" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="127dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="clear"
+        android:text="Clear"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="@+id/number2Text"
+        app:layout_constraintTop_toBottomOf="@+id/number2Text" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="237dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="259dp"
+        android:text="Result :"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
