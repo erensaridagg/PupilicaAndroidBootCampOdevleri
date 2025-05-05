@@ -1,1 +1,1 @@
-sadevce odevlerin tutuldugu bir repodur
+sadece odevlerin tutuldugu bir repodur
